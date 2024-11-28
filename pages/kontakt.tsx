@@ -116,25 +116,6 @@ export default function KontaktPage() {
                 </Text>
               </Text>
             </Stack>
-            <Stack gap={8} align="start" justify="start" c="white">
-              <Text c="white" fz={32} fw={700} ta="center">
-                Sledujte nás!
-              </Text>
-              <Flex wrap="wrap" gap={32} align="center" justify="center">
-                <Image
-                  src="/SVG/Instagram.svg"
-                  alt="/SVG/Instagram.svg"
-                  height={48}
-                  width={48}
-                />
-                <Image
-                  src="/SVG/Facebook.svg"
-                  alt="/SVG/Facebook.svg"
-                  height={48}
-                  width={48}
-                />
-              </Flex>
-            </Stack>
           </Stack>
         </Flex>
 
