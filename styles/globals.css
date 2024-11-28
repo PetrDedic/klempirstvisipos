@@ -1,0 +1,7 @@
+body {
+  background-image: url("/SVG/Background.svg");
+  background-size: cover;
+  background-position: top;
+
+  overflow-x: hidden;
+}
