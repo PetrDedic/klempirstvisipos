@@ -218,6 +218,7 @@ export default function IndexPage() {
                     src={img}
                     alt={`${img} alt`}
                     fill
+                    sizes="100vw"
                     style={{ borderRadius: 16 }}
                   />
                 </AspectRatio>
@@ -241,7 +242,7 @@ export default function IndexPage() {
           </Text>
         </Stack>
 
-        <Grid w="100%" gutter={64}>
+        <Grid w="100%" gutter="xl">
           <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
             <AspectRatio
               ratio={4 / 5}

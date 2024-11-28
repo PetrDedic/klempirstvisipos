@@ -33,7 +33,9 @@ const Navbar = () => {
         backdropFilter: "blur(10px)",
       }}
     >
-      <Image src="/SVG/Logo_Sipos.svg" alt="Logo" height={48} width={96} />
+      <Link href="/" style={{ color: "inherit", textDecoration: "inherit" }}>
+        <Image src="/SVG/Logo_Sipos.svg" alt="Logo" height={48} width={96} />
+      </Link>
       {smallWindow ? (
         <>
           <Burger

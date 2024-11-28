@@ -61,6 +61,7 @@ export default function ImageCarousel({
                     src={img}
                     alt={`${img} alt`}
                     fill
+                    sizes="100vw"
                     style={{ borderRadius: 16 }}
                   />
                 </AspectRatio>
@@ -96,6 +97,7 @@ export default function ImageCarousel({
                   src={img}
                   alt={`${img} alt`}
                   fill
+                  sizes="100vw"
                   style={{ borderRadius: 16 }}
                 />
               </AspectRatio>

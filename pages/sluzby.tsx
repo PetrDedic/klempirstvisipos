@@ -97,6 +97,7 @@ export default function SluzbyPage() {
                 src="/Sluzby/1_foto_Sluzby.webp"
                 alt="/Sluzby/1_foto_Sluzby.webp"
                 fill
+                sizes="100vw"
                 style={{ borderRadius: 16 }}
               />
             </AspectRatio>
@@ -159,6 +160,7 @@ export default function SluzbyPage() {
                 src="/Sluzby/2_foto_Sluzby.webp"
                 alt="/Sluzby/2_foto_Sluzby.webp"
                 fill
+                sizes="100vw"
                 style={{ borderRadius: 16 }}
               />
             </AspectRatio>
@@ -239,6 +241,7 @@ export default function SluzbyPage() {
                 src="/Sluzby/3_foto_Sluzby.webp"
                 alt="/Sluzby/3_foto_Sluzby.webp"
                 fill
+                sizes="100vw"
                 style={{ borderRadius: 16 }}
               />
             </AspectRatio>
@@ -326,7 +329,7 @@ export default function SluzbyPage() {
                 <Text ta="center" maw={960}>
                   <Text span fw={700}>
                     Asfaltové šindele
-                  </Text>{" "}
+                  </Text>
                 </Text>
                 <Text ta="center" maw={960}>
                   <Text span fw={700}>
@@ -344,7 +347,7 @@ export default function SluzbyPage() {
                 <Text ta="center" maw={960}>
                   <Text span fw={700}>
                     Polykarbonátové krytiny
-                  </Text>{" "}
+                  </Text>
                 </Text>
               </Stack>
             </Stack>
