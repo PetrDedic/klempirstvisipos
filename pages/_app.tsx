@@ -22,37 +22,72 @@ export default function App({ Component, pageProps }: any) {
       forceColorScheme="light"
     >
       <Head>
-        <title>Klempířství Ladislav Šipoš | Střechy na celý život!</title>
-        <meta
-          name="viewport"
-          content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
-        />
+        {/* Meta tags */}
+        <title>Klempířství Šipoš | Střechy na celý život</title>
         <meta
           name="description"
-          content="Spojuji kreativitu a strategii, abych vaší značce dodal nový rozměr. Specializuji se na brand identitu, logotvorbu, webové stránky, tiskoviny a další kreativní služby."
+          content="Klempířství Šipoš nabízí široký výběr služeb v oblasti střech. Specializujeme se na rodinné domy, rekonstrukce a novostavby se zaměřením na šikmé i ploché střechy."
         />
-        <meta
-          name="keywords"
-          content="Paryn Design, kreativní služby, brand identita, logotvorba, bannery, tiskoviny, návrhy na textil, webové stránky, správa sociálních sítí, fotografie"
-        />
-        <meta name="author" content="Paryn Design" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="author" content="Klempířství Šipoš" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Paryn Design | Kreativní služby pro Vaši značku"
+          content="Klempířství Šipoš | Střechy na celý život"
         />
-        <meta property="og:site_name" content="Paryn Design" />
         <meta
           property="og:description"
-          content="Specializuji se na brand identitu, logotvorbu, webové stránky, tiskoviny a další kreativní služby, které dodají vaší značce nový rozměr."
+          content="Klempířství Šipoš nabízí široký výběr služeb v oblasti střech. Specializujeme se na rodinné domy, rekonstrukce a novostavby se zaměřením na šikmé i ploché střechy."
         />
         <meta
           property="og:image"
-          content="/Fotky/paryn_design_banner_odkaz_socky.webp"
+          content="https://klempirstvisipos.cz/Uvodni_a_proklikove_bannery_fotky/Domu_uvodni_foto.webp"
         />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.paryndesign.cz/" />
-        <link rel="shortcut icon" href="/favicon.svg" />
-        <link rel="apple-touch-icon" href="/favicon.svg" />
+        <meta property="og:url" content="https://klempirstvisipos.cz" />
+        <meta property="og:site_name" content="Klempířství Šipoš" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Klempířství Šipoš | Střechy na celý život"
+        />
+        <meta
+          name="twitter:description"
+          content="Klempířství Šipoš nabízí široký výběr služeb v oblasti střech. Specializujeme se na rodinné domy, rekonstrukce a novostavby se zaměřením na šikmé i ploché střechy."
+        />
+        <meta
+          name="twitter:image"
+          content="https://klempirstvisipos.cz/Uvodni_a_proklikove_bannery_fotky/Domu_uvodni_foto.webp"
+        />
+
+        {/* Favicon */}
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
+        <link rel="manifest" href="/site.webmanifest" />
+
+        {/* Additional meta for SEO */}
+        <meta name="robots" content="index, follow" />
+        <meta name="theme-color" content="#ffffff" />
       </Head>
       <Navbar />
       <Component {...pageProps} />
