@@ -1,4 +1,5 @@
 import { Card, Flex, Text, Title } from "@mantine/core";
+import { useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 import { ReactNode } from "react";
 
@@ -11,6 +12,8 @@ const Hero = ({
   title: ReactNode | string;
   subText?: ReactNode | string;
 }) => {
+  const smallWindow = useMediaQuery("(max-width: 1200px)");
+
   return (
     <Card
       radius={0}
@@ -29,7 +32,13 @@ const Hero = ({
       <Flex direction="column" gap={32} align="center" justify="center">
         <Image src="/SVG/Logo_Sipos.svg" alt="Logo" height={128} width={256} />
         <Flex direction="column">
-          <Title order={1} c="white" ta="center" fz={48}>
+          <Title
+            order={1}
+            c="white"
+            ta="center"
+            fz={smallWindow ? 32 : 48}
+            lh={1.25}
+          >
             {title}
           </Title>
           {subText && (
