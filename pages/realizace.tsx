@@ -18,6 +18,7 @@ import Link from "next/link";
 import classes from "../styles/Index.module.css";
 import BeginCard from "../components/BeginCard";
 import ImageCarousel from "../components/ImageCarousel";
+import Form from "../components/Form";
 
 export default function RealizacePage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -163,6 +164,7 @@ export default function RealizacePage() {
             "/Realizace/Dum_Zelechovice/5_foto.webp",
           ]}
         />
+        <Form />
       </Stack>
     </>
   );

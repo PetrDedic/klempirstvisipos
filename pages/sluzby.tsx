@@ -17,6 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "../styles/Index.module.css";
 import BeginCard from "../components/BeginCard";
+import Form from "../components/Form";
 
 export default function SluzbyPage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -60,7 +61,14 @@ export default function SluzbyPage() {
           <Grid.Col span={{ base: 12, sm: 6 }}>
             <Stack align="center" justify="center" w="100%" gap={64}>
               <Stack gap={16} align="center" justify="center" w="100%">
-                <Title order={3} fz={32} ta="center" lh={1}>
+                <Title
+                  order={3}
+                  fz={32}
+                  ta="center"
+                  lh={1}
+                  id="klempistvi"
+                  style={{ scrollMarginTop: 100 }}
+                >
                   Klempířství
                 </Title>
                 <Text ta="center" maw={480}>
@@ -72,7 +80,14 @@ export default function SluzbyPage() {
                 </Text>
               </Stack>
               <Stack gap={16} align="center" justify="center" w="100%">
-                <Title order={3} fz={32} ta="center" lh={1}>
+                <Title
+                  order={3}
+                  fz={32}
+                  ta="center"
+                  lh={1}
+                  id="pokryvacstvi"
+                  style={{ scrollMarginTop: 100 }}
+                >
                   Pokrývačství
                 </Title>
                 <Text ta="center" maw={480}>
@@ -142,9 +157,17 @@ export default function SluzbyPage() {
             <Title order={3} fz={32} ta="center" lh={1}>
               Nebo .. vyplňtě bezplatný formulář!
             </Title>
-            <Button color="white" size="lg" c="black">
-              Vyplnit formulář
-            </Button>
+            <Link
+              href="#form"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              <Button bg="white" size="lg" c="black">
+                Vyplnit formulář
+              </Button>
+            </Link>
           </Stack>
         </Card>
 
@@ -168,7 +191,14 @@ export default function SluzbyPage() {
           <Grid.Col span={{ base: 12, sm: 6 }}>
             <Stack align="center" justify="center" w="100%" gap={64}>
               <Stack gap={16} align="center" justify="center" w="100%">
-                <Title order={3} fz={32} ta="center" lh={1}>
+                <Title
+                  order={3}
+                  fz={32}
+                  ta="center"
+                  lh={1}
+                  id="tesarstvi"
+                  style={{ scrollMarginTop: 100 }}
+                >
                   Tesařství a montáže střešních oken
                 </Title>
                 <Text ta="center" maw={400}>
@@ -376,6 +406,7 @@ export default function SluzbyPage() {
             </Stack>
           </Grid.Col>
         </Grid>
+        <Form />
       </Stack>
     </>
   );

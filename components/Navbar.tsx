@@ -43,8 +43,26 @@ const Navbar = () => {
             onClick={opened ? close : open}
             color="white"
           />
-          <Drawer size="100%" opened={opened} onClose={close}>
-            <Flex gap={16} direction="column">
+          <Drawer
+            size="100%"
+            opened={opened}
+            onClose={close}
+            styles={{
+              header: {
+                background: "none",
+              },
+              close: {
+                color: "white",
+
+                background: "none",
+              },
+              content: {
+                backgroundColor: "rgba(0,0,0,.25)",
+                backdropFilter: "blur(10px)",
+              },
+            }}
+          >
+            <Flex gap={16} direction="column" justify="center" align="center">
               {links.map((link, index) => (
                 <Link
                   key={index}
@@ -52,8 +70,9 @@ const Navbar = () => {
                   style={{ color: "inherit", textDecoration: "inherit" }}
                 >
                   <Text
-                    c="black"
-                    fw={router.pathname === link.link ? 700 : 400}
+                    fz={24}
+                    c="white"
+                    fw={router.pathname === link.link ? 700 : 100}
                   >
                     {link.label}
                   </Text>

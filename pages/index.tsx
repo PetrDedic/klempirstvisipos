@@ -17,6 +17,7 @@ import Image from "next/image";
 import Link from "next/link";
 import classes from "../styles/Index.module.css";
 import BeginCard from "../components/BeginCard";
+import Form from "../components/Form";
 
 export default function IndexPage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -26,14 +27,17 @@ export default function IndexPage() {
     {
       title: "Klempířství",
       image: "/Domu/1_foto_domu.webp",
+      link: "/sluzby#klempistvi",
     },
     {
       title: "Tesařství",
       image: "/Domu/2_foto_domu.webp",
+      link: "/sluzby#tesarstvi",
     },
     {
       title: "Pokrývačství",
       image: "/Domu/3_foto_domu.webp",
+      link: "/sluzby#pokryvacstvi",
     },
   ];
 
@@ -76,37 +80,47 @@ export default function IndexPage() {
             {cardsData.map((card, index) => {
               return (
                 <Grid.Col key={index} span={{ base: 12, sm: 4, lg: 4 }}>
-                  <AspectRatio ratio={1 / 1}>
-                    <Card
-                      p={0}
-                      radius={16}
-                      style={{
-                        boxShadow: "rgba(0, 0, 0, 0.25) 0px 5px 15px",
-                        backgroundImage: `url(${card.image})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "cover",
-                      }}
-                    >
-                      <Flex
-                        w="100%"
-                        h="100%"
-                        align="end"
-                        justify="center"
-                        p={smallWindow ? 16 : 32}
+                  <Link
+                    href={card.link}
+                    style={{
+                      textDecoration: "inherit",
+                      color: "inherit",
+                      height: "100%",
+                    }}
+                  >
+                    <AspectRatio ratio={1 / 1}>
+                      <Card
+                        p={0}
+                        radius={16}
+                        style={{
+                          boxShadow: "rgba(0, 0, 0, 0.25) 0px 5px 15px",
+                          backgroundImage: `url(${card.image})`,
+                          backgroundRepeat: "no-repeat",
+                          backgroundSize: "cover",
+                        }}
+                        className={classes.card}
                       >
-                        <Text
-                          c="white"
-                          fz={smallWindow ? 24 : "1.5vw"}
-                          lh={1.25}
-                          ta="center"
-                          fw={700}
-                          lts={0.75}
+                        <Flex
+                          w="100%"
+                          h="100%"
+                          align="end"
+                          justify="center"
+                          p={smallWindow ? 16 : 32}
                         >
-                          {card.title}
-                        </Text>
-                      </Flex>
-                    </Card>
-                  </AspectRatio>
+                          <Text
+                            c="white"
+                            fz={smallWindow ? 24 : "1.5vw"}
+                            lh={1.25}
+                            ta="center"
+                            fw={700}
+                            lts={0.75}
+                          >
+                            {card.title}
+                          </Text>
+                        </Flex>
+                      </Card>
+                    </AspectRatio>
+                  </Link>
                 </Grid.Col>
               );
             })}
@@ -292,6 +306,7 @@ export default function IndexPage() {
             </AspectRatio>
           </Grid.Col>
         </Grid>
+        <Form />
       </Stack>
     </>
   );

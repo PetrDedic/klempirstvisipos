@@ -49,9 +49,17 @@ export default function BeginCard() {
           </Text>
         </Stack>
         <Flex align="center" justify="center" w="100%" h="100%">
-          <Button color="#e3000f" variant="filled" size="xl" radius="md">
-            Vyplnit formulář
-          </Button>
+          <Link
+            href="#form"
+            style={{
+              color: "inherit",
+              textDecoration: "none",
+            }}
+          >
+            <Button color="#e3000f" variant="filled" size="xl" radius="md">
+              Vyplnit formulář
+            </Button>
+          </Link>
         </Flex>
       </Flex>
     </Card>

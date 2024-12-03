@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import BeginCard from "../components/BeginCard";
 import OfferCard from "../components/OfferCard";
+import Form from "../components/Form";
 
 export default function KontaktPage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -140,6 +141,7 @@ export default function KontaktPage() {
         </Stack>
 
         <OfferCard />
+        <Form />
       </Stack>
     </>
   );
