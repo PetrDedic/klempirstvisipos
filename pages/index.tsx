@@ -18,6 +18,7 @@ import Link from "next/link";
 import classes from "../styles/Index.module.css";
 import BeginCard from "../components/BeginCard";
 import Form from "../components/Form";
+import SpecialistCard from "../components/SpecialistCard";
 
 export default function IndexPage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -240,6 +241,8 @@ export default function IndexPage() {
             ))}
           </Carousel>
         </Stack>
+
+        <SpecialistCard />
 
         <Stack gap={32} align="center" justify="center" w="100%">
           <Text ta="center" maw={960}>

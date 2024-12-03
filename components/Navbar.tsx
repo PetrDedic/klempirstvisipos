@@ -3,6 +3,7 @@ import { useDisclosure, useMediaQuery } from "@mantine/hooks";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const Navbar = () => {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -16,6 +17,16 @@ const Navbar = () => {
     { label: "Realizace", link: "/realizace" },
     { label: "Kontakt", link: "/kontakt" },
   ];
+
+  useEffect(() => {
+    const handleRouteChange = () => close(); // Close the drawer when the route changes
+    router.events.on("routeChangeStart", handleRouteChange);
+
+    // Cleanup event listener on unmount
+    return () => {
+      router.events.off("routeChangeStart", handleRouteChange);
+    };
+  }, [router.events, close]);
 
   return (
     <Flex
