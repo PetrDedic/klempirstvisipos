@@ -162,11 +162,11 @@ export default function IndexPage() {
                   width={128}
                 />
                 <Text fz={24} lh={1.25} ta="center" fw={700} lts={0.75}>
-                  Velký výběr služeb
+                  Ověřeni na trhu
                 </Text>
                 <Text ta="center">
-                  Nabízíme veliký výběr služeb, které pokryjí většinu Vašich
-                  požadavků.
+                  Na trhu působíme od roku 2002. Za tu dobu máme nespočet
+                  úspěšných realizací.
                 </Text>
               </Stack>
             </Grid.Col>
@@ -179,11 +179,10 @@ export default function IndexPage() {
                   width={128}
                 />
                 <Text fz={24} lh={1.25} ta="center" fw={700} lts={0.75}>
-                  Velký výběr služeb
+                  Záruka na naše služby
                 </Text>
                 <Text ta="center">
-                  Nabízíme veliký výběr služeb, které pokryjí většinu Vašich
-                  požadavků.
+                  Na námi provedené služby, nabízíme XX roční záruku.
                 </Text>
               </Stack>
             </Grid.Col>
