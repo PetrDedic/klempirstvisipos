@@ -22,14 +22,33 @@ const Hero = ({
       py="15vh"
       mah={600}
       style={{
-        background: `url(${image})`,
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
         borderBottom: "8px solid #e3000f",
+        position: "relative",
       }}
     >
-      <Flex direction="column" gap={32} align="center" justify="center">
+      <Image
+        src={image}
+        alt=""
+        style={{
+          pointerEvents: "none",
+          objectFit: "cover",
+          objectPosition: "center",
+          zIndex: 0,
+        }}
+        fill
+        quality={100}
+        priority
+      />
+      <Flex
+        direction="column"
+        gap={32}
+        align="center"
+        justify="center"
+        style={{ zIndex: 1 }}
+      >
         <Image src="/SVG/Logo_Sipos.svg" alt="Logo" height={128} width={256} />
         <Flex direction="column">
           <Title

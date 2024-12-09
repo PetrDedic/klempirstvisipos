@@ -182,7 +182,8 @@ export default function IndexPage() {
                   Záruka na naše služby
                 </Text>
                 <Text ta="center">
-                  Na námi provedené služby, nabízíme XX roční záruku.
+                  Na námi provedené služby našim zákazníkům nabízíme 5 let
+                  záruku.
                 </Text>
               </Stack>
             </Grid.Col>

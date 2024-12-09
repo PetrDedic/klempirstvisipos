@@ -44,7 +44,10 @@ export default function KontaktPage() {
           w="100%"
           gap={smallWindow ? 16 : 64}
           direction={smallWindow ? "column" : "row"}
+          align="center"
+          justify="center"
         >
+          {/*
           <Stack w="100%">
             <AspectRatio ratio={2 / 3} style={{ borderRadius: 16 }}>
               <Card
@@ -60,7 +63,8 @@ export default function KontaktPage() {
               />
             </AspectRatio>
           </Stack>
-          <Stack w="100%" align="start" justify="center">
+          */}
+          <Stack align="start" justify="center">
             <Stack gap={0} align="start" justify="start">
               <Text fz={48} fw={700} ta="center" lh={1}>
                 Ladislav Šipoš
