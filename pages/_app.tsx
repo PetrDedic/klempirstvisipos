@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: any) {
         />
         <meta
           name="keywords"
-          content="Střechy, Klempířství, Pokrývačství, Tesařství, Ploché střechy, Rekonstrukce, Opravy střech, Okapy, Svody, Parapety, Výroba, Montáže oken, Okna Velux, Stropy, Vazba, Montáž pergoly, Střešní krytiny, Klempířství Morkovice"
+          content="Střechy, Klempířství, Pokrývačství, Tesařství, Ploché střechy, Rekonstrukce, Opravy střech, Okapy, Svody, Parapety, Výroba, Montáže oken, Okna Velux, Stropy, Vazba, Montáž pergoly, Střešní krytiny, Klempířství Morkovice, Střešní okna Morkovice, Střechy Morkovice, Střechy Kroměříž, Klempířství Kroměříž"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
