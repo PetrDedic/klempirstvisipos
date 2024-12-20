@@ -86,18 +86,18 @@ const Footer = () => {
                 Sledujte nás!
               </Text>
               <Flex wrap="wrap" gap={32} align="center" justify="center">
-                <Image
-                  src="/SVG/Instagram.svg"
-                  alt="/SVG/Instagram.svg"
-                  height={48}
-                  width={48}
-                />
-                <Image
-                  src="/SVG/Facebook.svg"
-                  alt="/SVG/Facebook.svg"
-                  height={48}
-                  width={48}
-                />
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61570447763288"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/SVG/Facebook.svg"
+                    alt="/SVG/Facebook.svg"
+                    height={48}
+                    width={48}
+                  />
+                </Link>
               </Flex>
             </Stack>
           </Stack>
