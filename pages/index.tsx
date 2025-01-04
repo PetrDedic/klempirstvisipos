@@ -19,6 +19,7 @@ import classes from "../styles/Index.module.css";
 import BeginCard from "../components/BeginCard";
 import Form from "../components/Form";
 import SpecialistCard from "../components/SpecialistCard";
+import { IconStarFilled } from "@tabler/icons-react";
 
 export default function IndexPage() {
   const smallWindow = useMediaQuery("(max-width: 1200px)");
@@ -191,6 +192,84 @@ export default function IndexPage() {
         </Stack>
 
         <BeginCard />
+
+        <Stack gap={48} align="center" justify="center" w="100%">
+          <Stack align="center" justify="center" gap={8}>
+            <Title order={2} fz={32} ta="center" lh={1}>
+              Vaše spokojenost je pro nás prioritou
+            </Title>
+            <Text ta="center">
+              Rezence našish zákazníků jsou vždy dobré a vysoké!
+            </Text>
+          </Stack>
+          <Grid w="100%">
+            <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
+              <Stack w="100%" h="100%" align="center">
+                <Text fz={24} lh={1.25} ta="center" fw={700} lts={0.75}>
+                  Jan Zaoral
+                </Text>
+                <Flex align="center" justify="center" gap={8}>
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                </Flex>
+                <Text ta="center" px={8}>
+                  Doporučuji firmu. Realizovali mi rekonstrukci střechy na
+                  podzim 2024 a ze strany firmy byla perfektní komunikace i
+                  ochota se domluvit na podmínkách. Vše bylo tak jak jsme se od
+                  začátku domluvili a velké plus byl i rychlý čas za který byla
+                  realizace hotova.
+                </Text>
+              </Stack>
+            </Grid.Col>
+
+            <Grid.Col span={{ base: 12, sm: 6, lg: 4 }}>
+              <Stack w="100%" h="100%" align="center">
+                <Text fz={24} lh={1.25} ta="center" fw={700} lts={0.75}>
+                  Miroslav Pátík
+                </Text>
+                <Flex align="center" justify="center" gap={8}>
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                </Flex>
+                <Text ta="center" px={8}>
+                  Oslovil jsem firmu Klempířství Šipoš nejen ze známosti, ale
+                  hlavně na základě kvalitní práce. Jelikož střecha mého domku s
+                  vazbou pamatovala 2. světovou válku, tak byla potřeba nová. S
+                  firmou jsme se domluvili na kompletní likvidaci, vybudování
+                  nového věnce, následně vazby, krytiny a vše co k tomu patří.
+                  To že výsledné dílo dopadlo na jedničku netvrdím jenom já, ale
+                  také sousedé a známí.
+                </Text>
+              </Stack>
+            </Grid.Col>
+            <Grid.Col span={{ base: 12, lg: 4 }}>
+              <Stack w="100%" h="100%" align="center">
+                <Text fz={24} lh={1.25} ta="center" fw={700} lts={0.75}>
+                  Eva Zmeškalová
+                </Text>
+                <Flex align="center" justify="center" gap={8}>
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                  <IconStarFilled color="rgba(227, 0, 15, 1)" />
+                </Flex>
+                <Text ta="center" px={8}>
+                  Firma Klempířství Šipoš odvedla zakázku na výbornou. Jsem
+                  velmi spokojena. Vstřícné jednání, spolehlivost, rychlost,
+                  preciznost a kvalita odvedené práce. Mohu všem zájemcům tuto
+                  firmu doporučit.
+                </Text>
+              </Stack>
+            </Grid.Col>
+          </Grid>
+        </Stack>
 
         <Stack gap={32} align="center" justify="center" w="100%">
           <Title order={2} fz={32} ta="center" lh={1}>
