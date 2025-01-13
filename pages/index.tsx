@@ -199,7 +199,7 @@ export default function IndexPage() {
               Vaše spokojenost je pro nás prioritou
             </Title>
             <Text ta="center">
-              Rezence našish zákazníků jsou vždy dobré a vysoké!
+              Recenze našish zákazníků jsou vždy dobré a vysoké!
             </Text>
           </Stack>
           <Grid w="100%">
