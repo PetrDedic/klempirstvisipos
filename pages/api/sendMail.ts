@@ -21,7 +21,7 @@ export default async function handler(
 
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: "klempirstvisiposs@seznam.cz",
+      to: "L.sipos@seznam.cz",
       subject: "Nové vyplnění formuláře",
       html: `
         <h1>Nové vyplnění formuláře</h1>
